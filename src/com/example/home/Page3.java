@@ -46,13 +46,18 @@ public class Page3 extends Fragment {
 	    Typeface font = Typeface.createFromAsset(getActivity().getAssets(),"mplus-1c-thin.ttf");
 	    txt.setTypeface(font);
 	    
-	    TextView txt2 = (TextView) v.findViewById(R.id.mail);
+	    TextView txt2 = (TextView) v.findViewById(R.id.denwa);
 	    Typeface font2 = Typeface.createFromAsset(getActivity().getAssets(),"mplus-1c-thin.ttf");
 	    txt2.setTypeface(font2);
+	    
 
 		CheckBox chk1 = (CheckBox) v.findViewById(R.id.checkBox1);
 		Boolean preCheck = pref.getBoolean(CHECK_BOX, false);
 		chk1.setChecked(preCheck);
+		chk1.setTypeface(font2);
+		
+		CheckBox chk2 = (CheckBox) v.findViewById(R.id.checkBox2);
+		chk2.setTypeface(font2);
 
 		Button b =  (Button)v.findViewById(R.id.enterbutton1);
 		b.setOnClickListener(new OnClickListener() {

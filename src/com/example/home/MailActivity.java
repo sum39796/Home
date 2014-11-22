@@ -33,7 +33,7 @@ public class MailActivity extends Activity {
 	    requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_mail);
 		
-		TextView sample = (TextView)findViewById(R.id.mail);
+		TextView sample = (TextView)findViewById(R.id.denwa);
 	    sample.setTypeface(Typeface.createFromAsset(getAssets(), "mplus-1c-thin.ttf"));
 	    
 		address = (ListView)findViewById(R.id.address);

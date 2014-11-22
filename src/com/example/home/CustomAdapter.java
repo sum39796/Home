@@ -2,6 +2,7 @@ package com.example.home;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,6 +41,7 @@ public class CustomAdapter extends ArrayAdapter<String> {
             view = inflater.inflate(R.layout.item_layout, null);
             TextView label = (TextView)view.findViewById(R.id.tv);
             holder = new ViewHolder();
+            label.setTypeface(Typeface.createFromAsset(getContext().getAssets(),"mplus-1c-thin.ttf"));
             holder.labelText = label;
             view.setTag(holder);
         } else {
@@ -56,11 +58,11 @@ public class CustomAdapter extends ArrayAdapter<String> {
 
         // 陦梧ｯ弱↓閭梧勹濶ｲ繧貞､峨∴繧�
         if(position%3==0){
-            holder.labelText.setBackgroundColor(Color.parseColor("#0000ff"));
+            holder.labelText.setBackgroundColor(Color.parseColor("#696969"));
         }else if(position%3==1){
-            holder.labelText.setBackgroundColor(Color.parseColor("#1e90ff"));
+            holder.labelText.setBackgroundColor(Color.parseColor("#696969"));
         }else{
-            holder.labelText.setBackgroundColor(Color.parseColor("#6495ed"));
+            holder.labelText.setBackgroundColor(Color.parseColor("#696969"));
         }
 
         // XML縺ｧ螳夂ｾｩ縺励◆繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ繧定ｪｭ縺ｿ霎ｼ繧�

@@ -13,12 +13,14 @@ import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Typeface;
 import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class PhoneActivity extends Activity {
 	
@@ -30,6 +32,11 @@ public class PhoneActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_phone);
+		
+		TextView sample = (TextView)findViewById(R.id.denwa2);
+	    sample.setTypeface(Typeface.createFromAsset(getAssets(), "mplus-1c-thin.ttf"));
+	    
+		
 		phone = (ListView)findViewById(R.id.phone);
 		setPhoneList();
 		phone.setOnItemClickListener(new AdapterView.OnItemClickListener() {

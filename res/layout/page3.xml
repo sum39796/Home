@@ -63,7 +63,7 @@
                 android:textColor="#FFFFFF" />
 
             <TextView
-                android:id="@+id/mail"
+                android:id="@+id/denwa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="宛先を入力"
