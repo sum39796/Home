@@ -36,7 +36,7 @@ public class PhoneActivity extends Activity {
 		TextView sample = (TextView)findViewById(R.id.denwa2);
 	    sample.setTypeface(Typeface.createFromAsset(getAssets(), "mplus-1c-thin.ttf"));
 	    
-		
+		//test
 		phone = (ListView)findViewById(R.id.phone);
 		setPhoneList();
 		phone.setOnItemClickListener(new AdapterView.OnItemClickListener() {
