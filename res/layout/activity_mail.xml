@@ -12,7 +12,7 @@
     tools:context=".MailActivity" >
 
     <TextView
-        android:id="@+id/tv1"
+        android:id="@+id/mail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="宛先を選択"

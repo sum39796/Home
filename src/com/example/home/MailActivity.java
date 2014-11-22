@@ -12,12 +12,14 @@ import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Typeface;
 import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MailActivity extends Activity {
@@ -30,6 +32,10 @@ public class MailActivity extends Activity {
 		super.onCreate(savedInstanceState);
 	    requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_mail);
+		
+		TextView sample = (TextView)findViewById(R.id.mail);
+	    sample.setTypeface(Typeface.createFromAsset(getAssets(), "mplus-1c-thin.ttf"));
+	    
 		address = (ListView)findViewById(R.id.address);
 		setAddressList();
 		address.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -11,7 +11,7 @@
         android:id="@+id/Layouttate"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#add8e6"
+        android:background="#000000"
         android:orientation="vertical" >
         
         <LinearLayout
@@ -22,14 +22,14 @@
                 android:id="@+id/Button01"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/pictures"
+                android:background="@drawable/camera"
                 android:onClick="Camera" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/setting"
+                android:background="@drawable/settingflat"
                 android:onClick="settings" />
         </LinearLayout>
 
@@ -39,8 +39,9 @@
             android:layout_height="wrap_content"
             android:text="  カメラ    設定..."
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000"
-            android:textColorHint="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:typeface="normal" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -71,7 +72,7 @@
                     android:id="@+id/enterbutton1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/mailicon"
+                    android:background="@drawable/mailflat"
                     android:onClick="mail" />
  
                 <TextView
@@ -79,27 +80,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="メール"
-                    android:textColor="#000000" />
+                    android:textColor="#FFFFFF" />
 
                  <Button
-                    android:id="@+id/button2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/youtube2"
-                    android:onClick="Youtube" />
+                     android:id="@+id/button2"
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:background="@drawable/youtubeflat"
+                     android:onClick="Youtube" />
  
                 <TextView
                     android:id="@+id/tv2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="YouTube"
-                    android:textColor="#000000" />
+                    android:textColor="#FFFFFF" />
 
                 <Button
                     android:id="@+id/button6"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/phoneicon"
+                    android:background="@drawable/phoneflat"
                     android:onClick="Contact" />
 
                 <TextView
@@ -107,7 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="電話"
-                    android:textColor="#000000" />
+                    android:textColor="#FFFFFF" />
 
             </LinearLayout>
 
@@ -137,11 +138,11 @@
                 android:gravity="center"
                 android:orientation="vertical" >
 
-                <Button
+               <Button
                     android:id="@+id/button4"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/mza_4072987963846942881"
+                    android:background="@drawable/lineflat"
                     android:onClick="LINE" />
 
                 <TextView
@@ -149,13 +150,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="LINE"
-                    android:textColor="#000000" />
+                    android:textColor="#FFFFFF" />
 
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/internet"
+                    android:background="@drawable/internetflat"
                     android:onClick="Internet" />
 
                 <TextView
@@ -163,7 +164,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="インターネット"
-                    android:textColor="#000000" />
+                    android:textColor="#FFFFFF" />
             </LinearLayout>
 
         </LinearLayout>

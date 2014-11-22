@@ -42,7 +42,7 @@ public class WeatherActivity extends Activity {
 		
 		client = new AsyncHttpClient();
 		
-		tv1 = (TextView)findViewById(R.id.tv1);
+		tv1 = (TextView)findViewById(R.id.mail);
 		tv2 = (TextView)findViewById(R.id.tv2);
 		editText = (EditText)findViewById(R.id.editText);
 		listView = (ListView)findViewById(R.id.listView);

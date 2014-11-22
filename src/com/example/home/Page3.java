@@ -2,6 +2,7 @@ package com.example.home;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Page3 extends Fragment {
 
@@ -39,6 +41,14 @@ public class Page3 extends Fragment {
 		} else {
 			mEditText.setText(preAddress);
 		}
+		
+		TextView txt = (TextView) v.findViewById(R.id.tv2);
+	    Typeface font = Typeface.createFromAsset(getActivity().getAssets(),"mplus-1c-thin.ttf");
+	    txt.setTypeface(font);
+	    
+	    TextView txt2 = (TextView) v.findViewById(R.id.mail);
+	    Typeface font2 = Typeface.createFromAsset(getActivity().getAssets(),"mplus-1c-thin.ttf");
+	    txt2.setTypeface(font2);
 
 		CheckBox chk1 = (CheckBox) v.findViewById(R.id.checkBox1);
 		Boolean preCheck = pref.getBoolean(CHECK_BOX, false);
