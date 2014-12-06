@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
@@ -14,16 +15,7 @@
     android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000" >
-
-  <android.support.v4.view.PagerTitleStrip
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_gravity="top"
-      android:background="#000000"
-      android:paddingBottom="10dp"
-      android:paddingTop="10dp"
-      android:textColor="#000000" />
+    android:background="#00000000" >
 
 </android.support.v4.view.ViewPager>
 

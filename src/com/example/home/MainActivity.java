@@ -1,11 +1,15 @@
 package com.example.home;
 
+import java.util.Random;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.GradientDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -16,13 +20,19 @@ import android.provider.MediaStore;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.text.format.Time;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity {
+
+	private Random mRandom = new Random();
 
 	ViewPager viewPager;
 	SharedPreferences pref;
@@ -35,17 +45,18 @@ public class MainActivity extends FragmentActivity {
 	private int mPitch;
 	private int mRoll;
 	private SensorManager mSensorManager;
+	//FrameLayout layout;
 
 	long now;
 	long last;
+	
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		
-		
+
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		viewPager.setAdapter(new MyFragmentStatePagerAdapter(
 				getSupportFragmentManager()));
@@ -74,6 +85,8 @@ public class MainActivity extends FragmentActivity {
 			editor.commit();
 
 		}
+		
+		
 
 		// SensorManager‚ðŽæ“¾
 		mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -117,6 +130,18 @@ public class MainActivity extends FragmentActivity {
 		return true;
 		
 	}
+	
+
+    public void background1(View v){
+    	RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.bg);
+    	int alpha=(int)(Math.random()*256);
+    	int red=(int)(Math.random()*256);
+        int green=(int)(Math.random()*256);
+        int blue=(int)(Math.random()*256);
+        //layout1.setColor(Color.rgb(red,green,blue));
+    	layout1.setBackgroundColor(Color.argb(alpha,red,green,blue));
+    }
+
 
 	public void mail(View v) {
 		Intent intent = new Intent(this, MailActivity.class);
