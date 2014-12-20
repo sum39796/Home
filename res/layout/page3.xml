@@ -57,52 +57,18 @@
             android:background="#00000000"
             android:orientation="vertical" >
 
-            <CheckBox
-                android:id="@+id/checkBox1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="check1"
-                android:text="今日の私"
-                android:textColor="#FFFFFF" />
-
-            <TextView
-                android:id="@+id/denwa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="宛先を入力"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#00000000" >
-
-                <EditText
-                    android:id="@+id/addres"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="#00000000"
-                    android:ems="10"
-                    android:inputType="textEmailAddress" >
-
-                    <requestFocus />
-                </EditText>
             </LinearLayout>
 
             <Button
-                android:id="@+id/enterbutton1"
-                android:layout_width="88dp"
-                android:layout_height="44dp"
-                android:background="@drawable/enter" />
-
-            <Button
                 android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="background1"
-                android:text="背景色" />
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:onClick="background1" />
 
             <TextView
                 android:id="@+id/textView1"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.home"
+    package="com.kantan.home"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -25,7 +25,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar" >
         <activity
-            android:name="com.example.home.MainActivity"
+            android:name="com.kantan.home.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,27 +44,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.home.MailActivity"
+            android:name="com.kantan.home.MailActivity"
             android:label="@string/title_activity_mail" >
         </activity>
         <activity
-            android:name="com.example.home.ContactActivity"
+            android:name="com.kantan.home.ContactActivity"
             android:label="@string/title_activity_contact" >
         </activity>
         <activity
-            android:name="com.example.home.SettingActivity"
+            android:name="com.kantan.home.SettingActivity"
             android:label="@string/title_activity_setting" >
         </activity>
         <activity
-            android:name="com.example.home.CameraActivity"
+            android:name="com.kantan.home.CameraActivity"
             android:label="@string/title_activity_camera" >
         </activity>
         <activity
-            android:name="com.example.home.PhoneActivity"
+            android:name="com.kantan.home.PhoneActivity"
             android:label="@string/title_activity_phone" >
         </activity>
         <activity
-            android:name="com.example.home.WeatherActivity"
+            android:name="com.kantan.home.WeatherActivity"
             android:label="@string/title_activity_weather" >
         </activity>
     </application>

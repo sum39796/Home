@@ -1,4 +1,6 @@
-package com.example.home;
+package com.kantan.home;
+
+import com.kantan.home.R;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -30,33 +32,13 @@ public class Page3 extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.page3, null);
-		// SharedPrefernces の取得
-		pref = getActivity().getSharedPreferences(PREF_KEY,
-				Activity.MODE_PRIVATE);
-		mEditText = (EditText) v.findViewById(R.id.addres);
-
-		String preAddress = pref.getString(KEY_TEXT, "アドレスを入力してください");
-		if (preAddress.equals("アドレスを入力してください")) {
-			mEditText.setHint(preAddress);
-		} else {
-			mEditText.setText(preAddress);
-		}
 		
 		TextView txt = (TextView) v.findViewById(R.id.tv2);
 	    Typeface font = Typeface.createFromAsset(getActivity().getAssets(),"mplus-1c-thin.ttf");
 	    txt.setTypeface(font);
 	    
-	    TextView txt2 = (TextView) v.findViewById(R.id.denwa);
-	    Typeface font2 = Typeface.createFromAsset(getActivity().getAssets(),"mplus-1c-thin.ttf");
-	    txt2.setTypeface(font2);
-	    
-
-		CheckBox chk1 = (CheckBox) v.findViewById(R.id.checkBox1);
-		Boolean preCheck = pref.getBoolean(CHECK_BOX, false);
-		chk1.setChecked(preCheck);
-		chk1.setTypeface(font2);
-		
 		CheckBox chk2 = (CheckBox) v.findViewById(R.id.checkBox2);
+		Typeface font2 = Typeface.createFromAsset(getActivity().getAssets(),"mplus-1c-thin.ttf");
 		chk2.setTypeface(font2);
 
 		Button b =  (Button)v.findViewById(R.id.enterbutton1);

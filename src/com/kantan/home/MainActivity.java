@@ -1,6 +1,8 @@
-package com.example.home;
+package com.kantan.home;
 
 import java.util.Random;
+
+import com.kantan.home.R;
 
 import android.app.Activity;
 import android.content.Context;

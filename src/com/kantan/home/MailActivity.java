@@ -1,7 +1,9 @@
-package com.example.home;
+package com.kantan.home;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import com.kantan.home.R;
 
 import android.net.Uri;
 import android.os.Bundle;

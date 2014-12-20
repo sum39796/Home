@@ -1,4 +1,6 @@
-package com.example.home;
+package com.kantan.home;
+
+import com.kantan.home.R;
 
 import android.os.Bundle;
 import android.app.Activity;
